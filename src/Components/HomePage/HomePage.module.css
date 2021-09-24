@@ -1,0 +1,30 @@
+.HomepageWrapper {
+  margin-top: 80px;
+}
+
+.tableWrapper {
+  padding: 20px 40px;
+}
+
+.tableWrapper table {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: white;
+}
+
+.tableWrapper table,
+td,
+th {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 10px 20px;
+}
+
+.tableHeadingRow {
+  background-color: black;
+  color: white;
+}
+
+.tableHeadingRow th {
+  border: 1px solid white;
+}

@@ -1,0 +1,33 @@
+.sortDataPageWrapper {
+  margin-top: 80px;
+}
+
+.dateselectorWrapper {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.tableWrapper {
+  padding: 20px 40px;
+}
+
+.tableWrapper table {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: white;
+}
+
+.tableWrapper table,
+td,
+th {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 10px 20px;
+}
+
+.calendorWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}

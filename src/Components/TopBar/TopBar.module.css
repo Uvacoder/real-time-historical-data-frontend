@@ -1,0 +1,21 @@
+.Topbarwrapper {
+  width: 100%;
+  padding: 15px;
+  box-shadow: 0 0 12px #000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #5a439a;
+}
+
+.linkText {
+  text-decoration: none;
+  margin: 0 10px;
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.linkText:hover {
+  color: var(--primary_color);
+}
