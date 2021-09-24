@@ -5,8 +5,8 @@ import classes from "./HomePage.module.css";
 
 export default function HomePage() {
   const socketRef = useRef();
-  //const connectionURL = "https://realtimedata-backend.herokuapp.com/";
-  const connectionURL = "http://localhost:5050";
+  const connectionURL = "https://real-time-hist-data-backend.herokuapp.com/";
+  //const connectionURL = "http://localhost:5050";
 
   //useStates
   const [rtData, setrtData] = useState([]);

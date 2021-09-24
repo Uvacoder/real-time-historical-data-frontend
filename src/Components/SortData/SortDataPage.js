@@ -12,7 +12,7 @@ export default function SortDataPage() {
   let endDateOut = "";
 
   const handleFilter = (startDate, endDate) => {
-    let url = "https://realtimedata-backend.herokuapp.com/getsorteddata";
+    let url = "https://real-time-hist-data-backend.herokuapp.com/getsorteddata";
     let data = {
       startDate: startDate,
       endDate: endDate,
