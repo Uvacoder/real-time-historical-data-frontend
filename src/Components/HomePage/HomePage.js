@@ -5,7 +5,8 @@ import classes from "./HomePage.module.css";
 
 export default function HomePage() {
   const socketRef = useRef();
-  const connectionURL = "https://realtimedata-backend.herokuapp.com/";
+  //const connectionURL = "https://realtimedata-backend.herokuapp.com/";
+  const connectionURL = "http://localhost:5050";
 
   //useStates
   const [rtData, setrtData] = useState([]);
@@ -21,19 +22,23 @@ export default function HomePage() {
       //console.log(data);
       setrtData(data);
     });
-    // socketRef.current.on("user-disconnected" , ()=>{
-    //   setstart(false)
-    // })
+    // socketRef.current.on("user-disconnected", () => {
+    //   socketRef.current.emit("savert-data", false);
+    // });
   }, []);
 
-  const handleStartandStop = () => {
-    socketRef.current.emit("savert-data", start);
-    setstart(!start);
+  const handleStartandStop = (boolvalue) => {
+    socketRef.current.emit("savert-data", boolvalue);
+    setstart(!boolvalue);
   };
 
   return (
     <div className={classes.HomepageWrapper}>
-      <button onClick={handleStartandStop}>
+      <button
+        onClick={() => {
+          handleStartandStop(start);
+        }}
+      >
         {start ? "Start Real Time Uploading" : "Stop Real Time Uploading"}
       </button>
       <div className={classes.tableWrapper}>
